@@ -1,0 +1,149 @@
+{
+ "id": "CALIBRATION-R15",
+ "version": 1,
+ "name": "calibration R15",
+ "rig": "R15",
+ "space": "rel",
+ "fps": 60,
+ "length": 20,
+ "loop": false,
+ "priority": "Action4",
+ "camera": {
+  "yaw": 0,
+  "pitch": 5,
+  "distance": 11
+ },
+ "notes": "Frame 10 expected (front view): right arm raised FORWARD ~45deg (toward camera), left arm raised SIDEWAYS ~45deg, torso leaning FORWARD ~20deg, head turned to the character's LEFT (camera's right) ~30deg.",
+ "tracks": {
+  "RightUpperArm": [
+   {
+    "f": 0,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 10,
+    "r": [
+     45,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 20,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "LeftUpperArm": [
+   {
+    "f": 0,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 10,
+    "r": [
+     0,
+     0,
+     -45
+    ]
+   },
+   {
+    "f": 20,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "LowerTorso": [
+   {
+    "f": 0,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 10,
+    "r": [
+     -10,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 20,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "UpperTorso": [
+   {
+    "f": 0,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 10,
+    "r": [
+     -10,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 20,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   }
+  ],
+  "Head": [
+   {
+    "f": 0,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "f": 10,
+    "r": [
+     0,
+     30,
+     0
+    ]
+   },
+   {
+    "f": 20,
+    "r": [
+     0,
+     0,
+     0
+    ]
+   }
+  ]
+ }
+}

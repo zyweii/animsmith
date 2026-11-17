@@ -1,0 +1,12 @@
+{
+  "name": "animsmith",
+  "owner": { "name": "zyweii" },
+  "metadata": { "description": "Roblox 3D animation learning and making from references, for Claude Code." },
+  "plugins": [
+    {
+      "name": "animsmith",
+      "source": "./",
+      "description": "Learn Roblox animation from reference videos and animation data, then make character, weapon, ability, reaction, world and camera animations."
+    }
+  ]
+}

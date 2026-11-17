@@ -1,0 +1,35 @@
+# animsmith is public: no reference media, game names or vault paths in this repo.
+/scratch/
+__pycache__/
+*.pyc
+_cache/
+.cache/
+.DS_Store
+Thumbs.db
+desktop.ini
+.ledger.lock
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.ogg
+*.rbxm
+*.rbxl
+*.rbxmx
+*.rbxlx
+*.fbx
+*.bvh
+*.blend
+*.blend1
+*.glb
+*.gltf
+*.obj
+# The plugin's own assets get "!" exceptions below this line.

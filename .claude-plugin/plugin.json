@@ -1,0 +1,17 @@
+{
+  "name": "animsmith",
+  "version": "0.1.0",
+  "description": "Learn 3D animation for Roblox from reference videos and animation data, then make animations: characters (R15/R6), guns and weapons, abilities, reactions, world elements and camera moves. References become measured cards and deep Breakdowns in a private vault, the user accepts or corrects each one, and the lessons build a pattern library the build loop reads.",
+  "author": {
+    "name": "zyweii"
+  },
+  "license": "MIT",
+  "keywords": [
+    "roblox",
+    "animation",
+    "keyframes",
+    "studio",
+    "motion-design",
+    "reference-analysis"
+  ]
+}

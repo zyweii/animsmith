@@ -1,0 +1,27 @@
+{
+  "description": "animsmith: on SessionStart, print the vault path (ANIMSMITH_VAULT), the reference cards per category, pending Breakdowns, files waiting in the inbox and any build waiting for its approval write-up; on SessionEnd, mark open builds paused. One command line runs under bash/sh and under PowerShell (the bash branch ends before the PowerShell block comment closes). Never fails: both scripts exit 0 here.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo `# <#` >/dev/null; python \"${CLAUDE_PLUGIN_ROOT}/kit/scripts/session_hook.py\"; exit 0 #> >$null; $r = \"${CLAUDE_PLUGIN_ROOT}\"; if (-not $r) { $r = $env:CLAUDE_PLUGIN_ROOT }; python \"$r/kit/scripts/session_hook.py\"; exit 0",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo `# <#` >/dev/null; python \"${CLAUDE_PLUGIN_ROOT}/kit/scripts/ledger.py\" pause-open; exit 0 #> >$null; $r = \"${CLAUDE_PLUGIN_ROOT}\"; if (-not $r) { $r = $env:CLAUDE_PLUGIN_ROOT }; python \"$r/kit/scripts/ledger.py\" pause-open; exit 0",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
